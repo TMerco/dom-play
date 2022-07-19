@@ -9,5 +9,11 @@ document.querySelectorAll(".hamlet").style.backgroundColor = "yellow";
 
 
 function highlight(el){
-    el.style.backgroundColor='blue';
+
+    if(el.style.backgroundColor == "yellow"){
+        el.style.backgroundColor='white';
+
+    }else{
+        el.style.backgroundColor='yellow';
+    }
 }
