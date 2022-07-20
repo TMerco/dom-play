@@ -22,10 +22,22 @@ for(const mySpan of spans){
    // alert(mySpan.dataset.actor);
 }
 
-function highlightActor(actor){
+/* function highlightActor(actor){
     alert("The current actor is: " + actor);
-}
+}  */
 
+
+
+
+function highlightActor(actor){
+    for(const mySpan of spans)
+        if(actor == mySpan.dataset.actor){//current actor, highlight
+            mySpan.style.backgroundColor='yellow';
+        }else{//not current actor, remove highlight
+            mySpan.style.backgroundColor='white';
+        }
+        //alert("The current actor is: " + actor);
+}
 
 
 
