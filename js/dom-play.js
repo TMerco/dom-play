@@ -34,14 +34,12 @@ function highlightActor(actor){
         if(actor == mySpan.dataset.actor){//current actor, highlight
             mySpan.style.backgroundColor='orange';
             mySpan.style.color='white';
-            mySpan.style.fontWeight='bold';
+            mySpan.style.fontWeight='bolder';
 
 
         }else{//not current actor, remove highlight
             mySpan.style.backgroundColor='white';
             mySpan.style.color='black';
-
-
         }
         //alert("The current actor is: " + actor);
 }
@@ -49,11 +47,11 @@ function highlightActor(actor){
 
 
 
-function highlight(el){
+// function highlight(el){
 
-    if(el.style.backgroundColor == "yellow"){
-        el.style.backgroundColor='white';
-    }else{
-        el.style.backgroundColor='yellow';
-    }
-}
+//     if(el.style.backgroundColor == "yellow"){
+//         el.style.backgroundColor='white';
+//     }else{
+//         el.style.backgroundColor='yellow';
+//     }
+// }
