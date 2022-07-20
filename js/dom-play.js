@@ -34,10 +34,13 @@ function highlightActor(actor){
         if(actor == mySpan.dataset.actor){//current actor, highlight
             mySpan.style.backgroundColor='orange';
             mySpan.style.color='white';
+            mySpan.style.fontWeight='bold';
+
 
         }else{//not current actor, remove highlight
-            mySpan.style.backgroundColor='blue';
-            mySpan.style.color='white';
+            mySpan.style.backgroundColor='white';
+            mySpan.style.color='black';
+
 
         }
         //alert("The current actor is: " + actor);
